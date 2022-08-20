@@ -1,3 +1,44 @@
 body{
     background-color: aquamarine;
+    /* width: 100px; */
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: yellow;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.row {
+    display:flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* .row *{
+    border: 1px solid red;
+} */
+
+input{
+    height:2em;
+}
+
+.right table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.right table td,.right table th{
+    border:1px solid red;
+}
+
+#display-table img{
+    width:80px;
+    height:80px;
 }

@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.title {
+  background-color: #354259;
+  color: #CDC2AE;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  padding: 0.5em 0.5em;
+  letter-spacing: 0.2ch;
+}
+
+.sub-title {
+  font-size: calc(0.8rem + 1vw);
+}
+
+.container {
+  padding: 2em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 2em;
+}
+
+.container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-right: 1px solid #283243;
+}
+
+@media (min-width: 19rem) and (max-width: 53rem) {
+  .container .left {
+    border-right: none;
+  }
+}
+
+.container .left .input-div {
+  margin-block: 1em;
+  max-width: 20em;
+}
+
+.container .left .input-div .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.container .left .input-div .radio label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.container .left .input-div .radio label input {
+  margin: 0;
+  width: 20px;
+}
+
+.container .left .input-div label input {
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+  width: 100%;
+  height: 30px;
+  font-size: calc(0.8rem + 0.1vw);
+  padding-inline: 1em;
+  border-radius: none;
+  border: 1px solid #aaa;
+}
+
+.container .left .input-div label input:focus {
+  outline: #aaa;
+}
+
+.container .left .input-div label input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.container .left .input-div label input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.container .left .input-div label input::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.container .left .input-div label input::placeholder {
+  color: #aaa;
+}
+
+.container .left .input-div label #upload {
+  padding: 0;
+  border: none;
+}
+
+.container .left .btn-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left .btn-group button {
+  margin: 0;
+  padding: 0.5em 2em;
+  width: 50%;
+  border: none;
+  background-color: #354259;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.container .left .btn-group button:hover {
+  background-color: #283243;
+}
+
+.container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.container .right .table {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=style.css.map */

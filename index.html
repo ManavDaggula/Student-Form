@@ -5,56 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>Student Registration Form</h1>
+    <header>
+        <h1 class="title">Student Registration Form</h1>
+    </header>
     <div class="container">
-        <form class="left" method="">
-            <h2>New Registration</h2>
-            <div class="row">
-                <p>First Name</p>
-                <input type="text" id="fname">
-            </div>
-            <div class="row">
-                <p>Last Name</p>
-                <input type="text" id="lname">
-            </div>
-            <div class="row" id="gender">
-                <p>Gender</p>
-                <span><input type="radio" value="Male" id="gender-male" name="gender-radio"><span>Male</span>
-                <input type="radio" value="Female" id="gender-female" name="gender-radio"><span>Female</span>
-                <input type="radio" value="Others" id="gender-others" name="gender-radio" checked><span>Others</span></span>
-            </div>
-            <div class="row">
-                <p>Email</p>
-                <input type="email" id="email">
-            </div>
-            <div class="row">
-                <p>Date Of Birth</p>
-                <input type="date" id="dob">
-            </div>
-            <div class="row">
-                    <label for="image">Upload Profile Photo</label>
-                    <input name ="image" type="file" id="file" accept=".jpg, .jpeg, .png">
-            </div>
-            <div class="row">
-                <input type="button" value="Submit" id="submit">
-                <input type="button" value="Clear" id="clear">
-            </div>
-        </form>
-        <div class="separator"></div>
+            <form class="left" method="">
+                <h2 class="sub-title">New Registration</h2>
+                <div class="input-div">
+                    <label for="fname">
+                        <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label for="lname">
+                        <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <div class="radio" id="gender">
+                        <label for="gender-male">
+                            <input type="radio" value="Male" id="gender-male" name="gender-radio">Male
+                        </label>
+                        <label for="gender-female">
+                            <input type="radio" value="Female" id="gender-female" name="gender-radio">Female
+                        </label>
+                        <label for="gender-others">
+                            <input type="radio" value="Others" id="gender-others" name="gender-radio" checked>Others
+                        </label>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <label for="email">
+                        <input type="email" id="email" name="email" placeholder="Enter your Email Address">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label for="date">
+                        DOB
+                        <input type="date" id="date" name="date">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <label for="upload">
+                        Upload your profile photo
+                        <input type="file" id="upload" name="file" accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <div class="btn-group input-div">
+                    <button id="submit">
+                        submit
+                    </button>
+                    <button type="reset">
+                        Clear
+                    </button>
+                </div>
+            </form>
         <div class="right">
-            <h2>View Registered</h2>
-            <table id="display-table">
+            <h2 class="sub-title">View Registered</h2>
+            <table id="display-table" class="table">
                 <tr>
-                    <th>Image</th><th>Name</th><th>DOB</th><th>Email</th><th>Gender</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Gender</th>
                 </tr>
             </table>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
-
 </html>

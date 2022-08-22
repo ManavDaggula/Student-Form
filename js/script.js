@@ -43,14 +43,6 @@ function validate(){
 
 }
 
-function clear(){
-    console.log("clear called.")
-    let l = document.querySelectorAll('.left input[type="text"],.left input[type="email"],.left input[type="date"],.left input[type="file"]')
-    for (let i=0;i<l.length;i++){
-        l[i].value="";
-    }
-}
-
 function add(){
     if(!validate()){return}
     let newRow = document.createElement('tr');
@@ -76,5 +68,4 @@ function add(){
     window.alert("Student added.")
 }
 
-document.getElementById('submit').addEventListener('click',add)
-document.getElementById('clear').addEventListener('click',clear);
+document.getElementById('submit').addEventListener('click',add);
